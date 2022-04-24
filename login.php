@@ -1,4 +1,4 @@
-<?php require('db.php'); ?>
+<?php require('database.php'); ?>
 
 <?php
   if(!empty($_SESSION['user'])){
