@@ -2,7 +2,7 @@
 
 <?php
   if(!empty($_SESSION['user'])){
-  header('Location: dashboard');
+  header('Location: dashboard.php');
   }
 
   $title = "Inscription";
