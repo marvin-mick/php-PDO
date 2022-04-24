@@ -9,8 +9,6 @@
 <?php
   $user = $_SESSION['user'];
 
-  $title = 'Bonjour '.$user->name.;
-
   if(!empty($_POST['submit'])){
     $post = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
     extract($post);
