@@ -1,4 +1,4 @@
-<?php require('db.php'); ?>
+<?php require('database.php'); ?>
 
 <?php
   unset($_SESSION['user']);
