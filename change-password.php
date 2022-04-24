@@ -9,8 +9,6 @@
 <?php
   $user = $_SESSION['user'];
 
-  $title = 'Changer mon mot de passe';
-
   if(!empty($_POST)){
     $post = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
     extract($post);
