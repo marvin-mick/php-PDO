@@ -2,7 +2,7 @@
 
 <?php
   if(!empty($_SESSION['user'])){
-  header('Location: dashboard');
+  header('Location: dashboard.php');
   }
 
   $title = "Connexion";
@@ -28,7 +28,7 @@
       $user = $req->fetch();
       if($user && password_verify($password, $user->password)){
         $_SESSION['user'] = $user;
-        header('Location: dashboard');
+        header('Location: dashboard.php');
       }
 
       array_push($errors, "Mauvais identifiants.");
